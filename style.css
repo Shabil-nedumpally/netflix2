@@ -1,0 +1,106 @@
+*{
+    
+    margin: 0;
+    color: white;
+   
+
+}body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+   
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    
+}
+.row{
+    width:100% ;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    margin-top: 1%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+}.row img{
+    height: 100%;
+    margin-left:2px;
+    transition: transform 1s;
+
+}.row img:hover{
+    transform: scale(1.08); 
+    border: solid 1px white;  
+}.row::-webkit-scrollbar{
+    display: none;
+}.row-small{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}.row-small img{
+    width: 250px;
+    margin-left: 2px;
+    transition: transform 1s;
+   
+}.row-small img:hover{
+    transform: scale(1.08); 
+    border: solid 1px red; 
+
+}.row-small::-webkit-scrollbar{
+    display: none;
+}.banner{
+    width: 100%;
+    height: 448px;
+    background-image: url(https://m.media-amazon.com/images/M/MV5BOTIzODUzYzItM2UzZC00OGYwLTgwZDMtOWQ0ZThlN2FiODIxXkEyXkFqcGdeQWpnYW1i._V1_.jpg);
+    object-fit: contain;
+    background-size: cover;
+    background-position-x:  center;
+    padding-left: 5%;
+    
+}.banner h1{
+    padding-top: 14%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 245%;
+
+}.banner p{
+    font-weight: bold;
+    font-size: small;
+}
+.banner button{
+    margin: 2% 0 0 2%;
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    border-radius: 20px;
+}.banner button:hover{
+    background-color: red;
+}.fade{
+    margin-top: 145px;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37,37,37,0.61),#000 );
+}.nav img:nth-child(1){
+    width: 100px;
+    height: 50px;
+}.nav img:nth-child(2){
+    width: 40px;
+    object-fit: contain;
+    
+    
+}.nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 80%;
+    padding: 20px;
+
+}@media (max-width:700px){
+    .banner h1 {
+        padding-top: 24%;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 245%;
+    }
+}
